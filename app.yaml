@@ -1,4 +1,4 @@
-application: obs-ooievaar
+application: php-ooievaar
 version: 1
 runtime: php55
 api_version: 1
@@ -14,3 +14,4 @@ handlers:
 # Serve php scripts.
 - url: /(.+\.php)$
   script: \1
+
