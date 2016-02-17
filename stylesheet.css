@@ -1,0 +1,11 @@
+body {
+        background-image: url("./1.jpg");
+}
+
+.opdracht{
+    font-family: 'Coming Soon', cursive;
+    text-align: center;
+    font-size: 18px;
+    text-color:#fff;
+    text-shadow: 2px 2px #000
+}
