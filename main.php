@@ -11,10 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body style="padding:0px; margin:0px; background-color:#fff;font-family:Arial, sans-serif">
-    <?php 
-        require 'navbar.php'; 
-        require 'slider.html';
-    ?>
+    
     <h1 style = "text-align:center; font-family: 'Coming Soon', cursive; text-align: center; font-size: 40px; text-color:#fff; text-shadow: 2px 2px #f0f0f0">Welkom bij De Ooievaar</h1>
 </body>
 </html>
