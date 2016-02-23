@@ -60,7 +60,7 @@
         <form method="POST">
 <?php for($i = 0; $i<10; $i++){
              $s = som(); ?> 
-            <label> <?=$s["vraag"]?> </label> <input type="text" name="<?="vraag{$i}"?>" value=""> <?=$s["antwoord"]?> <br>
+            <label> <?=$s["vraag"]?> </label> <input type="text" name="<?="vraag{$i}"?>" value=""> <?=$s["antwoord"]?><br>
 <?php } ?>
         <input type="submit" name="button" value="Ok">
     </form>
