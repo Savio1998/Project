@@ -14,8 +14,7 @@
 </head>
 <body> 
 <?php 
-print_r($_POST);
-           
+          
         $vraag = array(
             $_POST["vraagextra0"],
             $_POST["vraagextra1"],
@@ -42,7 +41,7 @@ print_r($_POST);
             $_POST["vraag9"]
        );
         
-   $antwoord1 = array(
+   $antwoord = array(
             $_POST["antwoord0"],
             $_POST["antwoord1"],
             $_POST["antwoord2"],
@@ -54,31 +53,6 @@ print_r($_POST);
             $_POST["antwoord8"],
             $_POST["antwoord9"]
         );
-        
-         
-        
-         
-        
-         
-        
-        for($a = 0; $a<10; $a++){
-        if($vraagingevuld[$a] == $antwoord1[$a]){
-            $eindantwoord[$a] = $antwoord1[$a];
-            $eindbericht[$a] = "Goed gedaan!";
-            } 
-        else{
-            $eindantwoord[$a] = "";
-            $eindbericht[$a] = "Helaas, probeer het nog een keer.";
-        }      
-        }
-        
-         
-        
-        
-        
-        
-        
-       function som(){
         $oav = array(
             $_POST["nummer0"],
             $_POST["nummer1"],
@@ -115,57 +89,42 @@ print_r($_POST);
             $_POST["cijfer28"],
             $_POST["cijfer29"]
         );
-        $vraag = "";
         
-        for($e = 0; $e<10; $e++){    
-        if($oav[$e] == 1){
-            $vraag[$e] = "Wat is {$a[$e]} + {$b[$e]} ?";
-            $antwoord[$e] = $a[$e] + $b[$e];
-        } 
+         
         
-        else if($oav[$e] == 2){
-            if($b[$e] > $a[$e]){
-                $vraag[$e] = "Wat is {$b[$e]} - {$a[$e]} ?";
-                $antwoord[$e] = $b[$e] - $a[$e];
-            }
-            else{
-                $vraag[$e] = "Wat is {$a[$e]} - {$b[$e]} ?";
-                $antwoord[$e] = $a[$e] - $b[$e];
-            }           
+         
+        
+         
+        
+        for($a = 0; $a<10; $a++){
+        if($vraagingevuld[$a] == $antwoord[$a]){
+            $eindantwoord[$a] = $antwoord[$a];
+            $eindbericht[$a] = "Goed gedaan!";
+            } 
+        else{
+            $eindantwoord[$a] = "";
+            $eindbericht[$a] = "Helaas, probeer het nog een keer.";
+        }      
         }
         
-        else if($oav[$e] == 3){
-            $vraag[$e] = "Wat is {$a}[$e] * {$b}[$e] ?";
-            $antwoord[$e] = $a[$e] * $b[$e];
-           }
+         
+        
+        
+        
+        
+        
        
-        
-        
-
-        $arr = array(
-            "antwoord"  =>  $antwoord[$e],
-            "vraag"     =>  $vraag[$e],
-            "nummer"    =>  $oav[$e],
-            "cijfer1"   =>  $a[$e],
-            "cijfer2"   =>  $b[$e]
-        );
-
-        return $arr;
-        }
-       }
        
 ?>
 <form action="rekenenresultaat.php" method="POST">
-     <?php for($i = 0; $i<10; $i++){ 
-         
-         $s = som(); ?>            
+     <?php for($i = 0; $i<10; $i++){ ?>            
 
-            <label hidden> ... </label> <input class="hidden" type="text" name="<?="nummer{$i}"?>" value="<?=$s["nummer"]?>">
-            <label hidden> ~~~ </label> <input class="hidden" type="text" name="<?="cijfer1{$i}"?>" value="<?=$s["cijfer1"]?>">
-            <label hidden> ``` </label> <input class="hidden" type="text" name="<?="cijfer2{$i}"?>" value="<?=$s["cijfer2"]?>">
-            <label> <?=$s["vraag"]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>"> <?=$eindbericht[$i]?>
-            <label hidden> --- </label> <input class="hidden" type="text" name="<?="vraagextra{$i}"?>" value="<?=$s["vraag"]?>">            
-            <label hidden> <?=$s["antwoord"]?> </label> <input class="hidden" type="text" name="<?="antwoord{$i}"?>" value="<?=$s["antwoord"]?>"><br>
+            <input class="hidden" type="text" name="<?="nummer{$i}"?>" value="<?=$oav[$i]?>">
+            <input class="hidden" type="text" name="<?="cijfer1{$i}"?>" value="<?=$a[$i]?>">
+            <input class="hidden" type="text" name="<?="cijfer2{$i}"?>" value="<?=$b[$i]?>">
+            <label> <?=$vraag[$i]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>"> <?=$eindbericht[$i]?>
+            <input class="hidden" type="text" name="<?="vraagextra{$i}"?>" value="<?=$vraag[$i]?>">            
+            <input class="hidden" type="text" name="<?="antwoord{$i}"?>" value="<?=$antwoord[$i]?>"><br>
             
 <?php } ?>
         
