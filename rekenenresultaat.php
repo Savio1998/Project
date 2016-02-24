@@ -122,7 +122,7 @@
             <input class="hidden" type="text" name="<?="nummer{$i}"?>" value="<?=$oav[$i]?>">
             <input class="hidden" type="text" name="<?="cijfer1{$i}"?>" value="<?=$a[$i]?>">
             <input class="hidden" type="text" name="<?="cijfer2{$i}"?>" value="<?=$b[$i]?>">
-            <label> <?=$vraag[$i]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>"> <?=$eindbericht[$i]?>
+            <label> <?=$vraag[$i]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"> <?=$eindbericht[$i]?>
             <input class="hidden" type="text" name="<?="vraagextra{$i}"?>" value="<?=$vraag[$i]?>">            
             <input class="hidden" type="text" name="<?="antwoord{$i}"?>" value="<?=$antwoord[$i]?>"><br>
             
