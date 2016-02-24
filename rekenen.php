@@ -69,7 +69,7 @@
             <input class="hidden" type="text" name="<?="nummer{$i}"?>" value="<?=$s["nummer"]?>">
             <input class="hidden" type="text" name="<?="cijfer1{$i}"?>" value="<?=$s["cijfer1"]?>">
             <input class="hidden" type="text" name="<?="cijfer2{$i}"?>" value="<?=$s["cijfer2"]?>">
-            <label> <?=$s["vraag"]?> </label> <input type="text" name="<?="vraag{$i}"?>" value=""> 
+            <label> <?=$s["vraag"]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="" autocomplete="off"> 
             <input class="hidden" type="text" name="<?="vraagextra{$i}"?>" value="<?=$s["vraag"]?>">            
             <input class="hidden" type="text" name="<?="antwoord{$i}"?>" value="<?=$s["antwoord"]?>"><br>
 

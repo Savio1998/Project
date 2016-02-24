@@ -45,7 +45,7 @@
 ?>
 <form action="nederlandsresultaat.php" method="POST">
      <?php for($pvi = 0; $pvi<3; $pvi++){?> 
-            <label> <?=$pvvraag[$pvi]?> </label> <input type="text" name="<?="pvvraag{$pvi}"?>" value="<?=$pveindantwoord[$pvi]?>"> <?=$pveindbericht[$pvi]?><br>
+            <label> <?=$pvvraag[$pvi]?> </label> <input type="text" name="<?="pvvraag{$pvi}"?>" value="<?=$pveindantwoord[$pvi]?>" autocomplete="off"> <?=$pveindbericht[$pvi]?><br>
 <?php } ?>
 <br><h4><b>Wat is het onderwerp in de volgende zinnen?</b></h4><br>
 <?php 
@@ -78,7 +78,7 @@
         
 ?>    
  <?php for($ondi = 0; $ondi<3; $ondi++){?> 
-            <label> <?=$ondvraag[$ondi]?> </label> <input type="text" name="<?="ondvraag{$ondi}"?>" value="<?=$ondeindantwoord[$ondi]?>"> <?=$ondeindbericht[$ondi]?><br>
+            <label> <?=$ondvraag[$ondi]?> </label> <input type="text" name="<?="ondvraag{$ondi}"?>" value="<?=$ondeindantwoord[$ondi]?>" autocomplete="off"> <?=$ondeindbericht[$ondi]?><br>
 <?php } ?>
 
 <br><h4><b>Wat is het lijdend voorwerp in de volgende zinnen?</b></h4><br>
@@ -110,7 +110,7 @@
         
 ?>    
  <?php for($lvi = 0; $lvi<2; $lvi++){?> 
-            <label> <?=$lvvraag[$lvi]?> </label> <input type="text" name="<?="lvvraag{$lvi}"?>" value="<?=$lveindantwoord[$lvi]?>"> <?=$lveindbericht[$lvi]?><br>
+            <label> <?=$lvvraag[$lvi]?> </label> <input type="text" name="<?="lvvraag{$lvi}"?>" value="<?=$lveindantwoord[$lvi]?>" autocomplete="off"> <?=$lveindbericht[$lvi]?><br>
 <?php } ?>
 
 <br><h4><b>Wat is het meewerkend voorwerp in de volgende zinnen?</b></h4><br>
@@ -142,7 +142,7 @@
         
 ?>    
  <?php for($mvi = 0; $mvi<2; $mvi++){?> 
-            <label> <?=$mvvraag[$mvi]?> </label> <input type="text" name="<?="mvvraag{$mvi}"?>" value="<?=$mveindantwoord[$mvi]?>"> <?=$mveindbericht[$mvi]?><br>
+            <label> <?=$mvvraag[$mvi]?> </label> <input type="text" name="<?="mvvraag{$mvi}"?>" value="<?=$mveindantwoord[$mvi]?>" autocomplete="off"> <?=$mveindbericht[$mvi]?><br>
 <?php } ?>
         
         <br><input type="submit" name="button" value="Invullen">
