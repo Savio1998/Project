@@ -53,7 +53,7 @@
 <?php 
    $mvvraag = array(
             "I gave a big present to my parents",
-            "Your uncle gave wanted to give this CD to you"            
+            "Your uncle Gave wanted to give this CD to you"            
         );
 ?>    
  <?php for($mvi = 0; $mvi<2; $mvi++){?> 
