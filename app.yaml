@@ -12,6 +12,9 @@ handlers:
   application_readable: true
 
 # Serve php scripts.
+- url: /
+  script: main.php
+
 - url: /(.+\.php)$
   script: \1
 
