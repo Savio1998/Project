@@ -11,7 +11,9 @@
   <?php require 'navbar.php'; ?>
  
 </head>
-<body> 
+<body>
+    <div class="container"> 
+        
 <h3><b>Onderwerp</b></h3><br>
 <h4><b>Geef de persoonvorm en het onderwerp.</b></h4><br>
 <?php 
@@ -114,12 +116,17 @@
         }
         }
 ?>
+<div class="row">
+    <div class="col-md-5"></div><div class="col-md-2">Persoonvorm</div><div class="col-md-2">Onderwerp</div><div class="col-md-3"></div>
+</div>
+<div class="row">
 <form action="onderwerp.php" method="POST">
      <?php for($i = 0; $i<10; $i++){?> 
-            <label> <?=$vraag[$i]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"> <input type="text" name="<?="vraag1{$i}"?>" value="<?=$eindantwoord1[$i]?>" autocomplete="off"> <?=$eindbericht[$i]?><br>
+            <div class="col-md-5"><label> <?=$vraag[$i]?> </label></div> <div class="col-md-2"><input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"></div> <div class="col-md-2"><input type="text" name="<?="vraag1{$i}"?>" value="<?=$eindantwoord1[$i]?>" autocomplete="off"></div> <div class="col-md-3"><?=$eindbericht[$i]?></div><br>
 <?php } ?>
-
+</div>
         <br><input type="submit" name="button" value="Invullen">
-    </form>      
+    </form>   
+    </div>   
 </body>
 </html>

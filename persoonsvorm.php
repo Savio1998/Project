@@ -12,6 +12,7 @@
  
 </head>
 <body> 
+    <div class="container"> 
 <h3><b>Persoonsvorm</b></h3><br>
 <h4><b> Wat is de persoonsvorm in de volgende zinnen?</b></h4><br>
 <?php 
@@ -74,12 +75,14 @@
         }
         }
 ?>
+
 <form action="persoonsvorm.php" method="POST">
      <?php for($i = 0; $i<10; $i++){?> 
             <label> <?=$vraag[$i]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"> <?=$eindbericht[$i]?><br>
 <?php } ?>
 
         <br><input type="submit" name="button" value="Invullen">
-    </form>      
+    </form> 
+    </div>     
 </body>
 </html>

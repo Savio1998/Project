@@ -12,6 +12,7 @@
  
 </head>
 <body> 
+    <div class="container">
     
 <?php  function som(){
         $oav = (rand(1,3));
@@ -74,10 +75,10 @@
             <input class="hidden" type="text" name="<?="antwoord{$i}"?>" value="<?=$s["antwoord"]?>"><br>
 
 <?php } ?>
-        <input type="submit" name="button" value="Invullen">
+        <br><input type="submit" name="button" value="Invullen">
     </form>
     
-    
+    </div>
     
 </body>
 </html>

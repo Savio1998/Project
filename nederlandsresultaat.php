@@ -11,7 +11,8 @@
   <?php require 'navbar.php'; ?>
  
 </head>
-<body> 
+<body>
+    <div class="container"> 
 <h3><b>Zinsontleding</b></h3><br>
 <h4><b> Wat is de persoonsvorm in de volgende zinnen?</b></h4><br>
 <?php 
@@ -146,6 +147,7 @@
 <?php } ?>
         
         <br><input type="submit" name="button" value="Invullen">
-    </form>      
+    </form>  
+    </div>    
 </body>
 </html>
