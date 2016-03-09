@@ -6,17 +6,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <style>
-        li:hover{
+        li.navli:hover{
             background-color:#ff0000;
         }
-        li:active{
+        li.navli:active{
             background-color:#ff0000;
         }
-        .dropdown-menu>li>a {
+        .dropdown-menu>li.navli>a {
             color: #fff;
             background: black;
         }
-         .dropdown-menu>li>a:hover {
+         .dropdown-menu>li.navli>a:hover {
             color: #fff;
             background: #ff0000;
         }
@@ -24,7 +24,7 @@
              background: black;
         }
         
-        .navbar-inverse .navbar-nav>li>a {
+        .navbar-inverse .navbar-nav>li.navli>a {
              color: white;
         }
     </style>
@@ -38,19 +38,20 @@
       </a>
     </div>
     <ul class="nav navbar-nav">
-      <li style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/">Home</a></li>
-      <li style="margin-top:30px;" class="dropdown">
+      <li class="navli" style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/">Home</a></li>
+      <li  class="navli"style="margin-top:30px;" class="dropdown">
         <a  class="dropdown-toggle" data-toggle="dropdown">Oefeningen
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="rekenen.php">Rekenen</a></li>
-          <li><a href="nederlands.php">Nederlands</a></li>
-          <li><a href="engels.php">Engels</a></li>
-          <li><a href="geschiedenis.php">Geschiedenis</a></li> 
+          <li class="navli"><a href="rekenen.php">Rekenen</a></li>
+          <li class="navli"><a href="nederlands.php">Nederlands</a></li>
+          <li class="navli"><a href="engels.php">Engels</a></li>
+          <li class="navli"><a href="geschiedenis.php">Geschiedenis</a></li> 
+          <li class="navli"><a href="biologie.php">Biologie</a></li> 
         </ul>
       </li>
-      <li style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
-      <li style="margin-top:30px;"><a href="contact.php">Contact</a></li> 
+      <li class="navli"style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
+      <li class="navli"style="margin-top:30px;"><a href="contact.php">Contact</a></li> 
     </ul>
   </div>
 </nav>
