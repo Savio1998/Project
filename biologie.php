@@ -19,7 +19,7 @@
             "Welk celonderdeel zorgt ervoor dat een plant z'n eigen voedsel kan maken?",
             "Welk klein orgaantje in een cel regelt alles wat er in de cel moet gebeuren?",
             "Zij bacteriën veelcellig of eencellig?",  
-            "Waarmee plant een schimmel zich voort?"`,
+            "Waarmee plant een schimmel zich voort?",
             "Hebben schimmels celwanden?",
             "Heeft een sporenplant ook bladeren?",
             "Wat voor bladeren hebben de meeste naaktzadige planten?",
@@ -30,7 +30,7 @@
         );
 ?>
 <form action="biologieresults.php" method="POST">
-     <?php for($pvi = 0; $pvi<4; $pvi++){?> 
+     <?php for($pvi = 0; $pvi<10; $pvi++){?> 
             <label> <?=$pvvraag[$pvi]?> </label> <input type="text" name="<?="pvvraag{$pvi}"?>" value="" autocomplete="off"><br>
 <?php } ?>
 
