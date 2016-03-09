@@ -33,12 +33,12 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid" style = "height: 120px;">
     <div class="navbar-header">
-      <a class="navbar-brand"style = "margin-top:-10px;" href="main.php">
-          <img src="headerimage.png" >
+      <a class="navbar-brand"style = "margin-top:-10px;" href="http://php-ooievaar.appspot.com/">
+          <img src="headerimage.png"></img>
       </a>
     </div>
     <ul class="nav navbar-nav">
-      <li style="margin-top:30px;"><a href="#">Home</a></li>
+      <li style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/">Home</a></li>
       <li style="margin-top:30px;" class="dropdown">
         <a  class="dropdown-toggle" data-toggle="dropdown">Oefeningen
         <span class="caret"></span></a>
@@ -46,7 +46,7 @@
           <li><a href="rekenen.php">Rekenen</a></li>
           <li><a href="nederlands.php">Nederlands</a></li>
           <li><a href="engels.php">Engels</a></li>
-          <li><a href="biologie.php">Biologie</a></li> 
+          <li><a href="geschiedenis.php">Geschiedenis</a></li> 
         </ul>
       </li>
       <li style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
