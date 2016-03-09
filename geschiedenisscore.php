@@ -12,39 +12,31 @@
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Geschiedenis score</h1>
 		
         <?php
             
-            $answer1 = $_POST['question-1-answers'];
-            $answer2 = $_POST['question-2-answers'];
-            $answer3 = $_POST['question-3-answers'];
-            $answer4 = $_POST['question-4-answers'];
-            $answer5 = $_POST['question-5-answers'];
+            $answer1 = $_GET['question-1-answers'];
+            $answer2 = $_GET['question-2-answers'];
+            $answer3 = $_GET['question-3-answers'];
+            $answer4 = $_GET['question-4-answers'];
+            $answer5 = $_GET['question-5-answers'];
         
             $totalCorrect = 0;
             
             if ($answer1 == "B") { $totalCorrect++; }
-            if ($answer2 == "A") { $totalCorrect++; }
-            if ($answer3 == "C") { $totalCorrect++; }
-            if ($answer4 == "D") { $totalCorrect++; }
-            if ($answer5) { $totalCorrect++; }
+            if ($answer2 == "C") { $totalCorrect++; }
+            if ($answer3 == "A") { $totalCorrect++; }
+            if ($answer4 == "B") { $totalCorrect++; }
+            if ($answer5 == "C") { $totalCorrect++; }
             
-            echo "<div id='results'>$totalCorrect / 5 correct</div>";
+            $totalPercent = $totalCorrect * 20;
+            
+            echo "<div id='results'>$totalPercent / 100% </div>";
             
         ?>
 	
 	</div>
-	
-	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	var pageTracker = _gat._getTracker("UA-68528-29");
-	pageTracker._initData();
-	pageTracker._trackPageview();
-	</script>
 
 </body>
 
