@@ -12,6 +12,7 @@
  
 </head>
 <body> 
+    <div class="container">
 <h3><b>Analysis</b></h3><br>
 <h4><b> What is the verb in the following sentences ?</b></h4><br>
 <?php 
@@ -146,6 +147,7 @@
 <?php } ?>
         
         <br><input type="submit" name="button" value="Send">
-    </form>      
+    </form>
+    </div>      
 </body>
 </html>

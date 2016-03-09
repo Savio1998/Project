@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Persoonvorm</title>
+  <title>Onderwerp</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -11,10 +11,11 @@
   <?php require 'navbar.php'; ?>
  
 </head>
-<body> 
+<body>
     <div class="container"> 
-<h3><b>Persoonsvorm</b></h3><br>
-<h4><b> Wat is de persoonsvorm in de volgende zinnen?</b></h4><br>
+        
+<h3><b>Onderwerp</b></h3><br>
+<h4><b>Geef de persoonvorm en het onderwerp.</b></h4><br>
 <?php 
 
        $vraag = array(
@@ -31,6 +32,7 @@
         );
         for($e = 0; $e<10; $e++){
         $eindantwoord[$e] = "";
+        $eindantwoord1[$e] = ""; 
         $eindbericht[$e] = "";
         
         }
@@ -49,6 +51,19 @@
                     $_POST["vraag8"],
                     $_POST["vraag9"]
        );
+       
+            $resultaat1 = array(
+                    $_POST["vraag10"],
+                    $_POST["vraag11"],
+                    $_POST["vraag12"],
+                    $_POST["vraag13"],
+                    $_POST["vraag14"],
+                    $_POST["vraag15"],
+                    $_POST["vraag16"],
+                    $_POST["vraag17"],
+                    $_POST["vraag18"],
+                    $_POST["vraag19"]
+       );
         
              $antwoord = array(
                     "fiets",
@@ -62,27 +77,56 @@
                     "gaf",
                     "gaf"
         );
+            $antwoord1 = array(
+                    "ik",
+                    "ik",
+                    "jij",
+                    "ik",
+                    "mijn moeder",
+                    "wij",
+                    "ik",
+                    "mijn grootouders",
+                    "het jongetje",
+                    "mijn vader"
+        );
         
         for($a = 0; $a<10; $a++){
-        if($resultaat[$a] == $antwoord[$a]){
+        if($resultaat[$a] == $antwoord[$a] && $resultaat1[$a] == $antwoord1[$a]){
             $eindantwoord[$a] = $antwoord[$a];
+            $eindantwoord1[$a] = $antwoord1[$a];
             $eindbericht[$a] = "Goed gedaan!";
-            } 
+            }
+        else if($resultaat[$a] == $antwoord[$a] || $resultaat1[$a] == $antwoord1[$a]){
+            if($resultaat[$a] == $antwoord[$a]){
+               $eindantwoord[$a] = $antwoord[$a];
+               $eindantwoord1[$a] = "";
+               $eindbericht[$a] = "Het is je helaas nog niet helemaal gelukt";
+            }
+            else{
+               $eindantwoord[$a] = "";
+               $eindantwoord1[$a] = $antwoord1[$a];
+               $eindbericht[$a] = "Het is je helaas nog niet helemaal gelukt";  
+            }
+        }     
         else{
             $eindantwoord[$a] = "";
+            $eindantwoord1[$a] = "";
             $eindbericht[$a] = "Helaas, probeer het nog een keer.";
         }      
         }
         }
 ?>
-
-<form action="persoonsvorm.php" method="POST">
+<div class="row">
+    <div class="col-md-5"></div><div class="col-md-2">Persoonvorm</div><div class="col-md-2">Onderwerp</div><div class="col-md-3"></div>
+</div>
+<div class="row">
+<form action="onderwerp.php" method="POST">
      <?php for($i = 0; $i<10; $i++){?> 
-            <label> <?=$vraag[$i]?> </label> <input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"> <?=$eindbericht[$i]?><br>
+            <div class="col-md-5"><label> <?=$vraag[$i]?> </label></div> <div class="col-md-2"><input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"></div> <div class="col-md-2"><input type="text" name="<?="vraag1{$i}"?>" value="<?=$eindantwoord1[$i]?>" autocomplete="off"></div> <div class="col-md-3"><?=$eindbericht[$i]?></div><br>
 <?php } ?>
-
+</div>
         <br><input type="submit" name="button" value="Invullen">
-    </form> 
-    </div>     
+    </form>   
+    </div>   
 </body>
 </html>

@@ -12,7 +12,8 @@
   <?php require 'navbar.php'; ?>
  
 </head>
-<body> 
+<body>
+    <div class="container">      
 <?php 
           
         $vraag = array(
@@ -129,6 +130,7 @@
 <?php } ?>
         
         <br><input type="submit" name="button" value="Invullen">
-    </form>      
+    </form> 
+    </div>     
 </body>
 </html>
