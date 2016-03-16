@@ -1,4 +1,4 @@
- <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -39,6 +39,10 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="navli" style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/">Home</a></li>
+     <?php
+        if ($_POST['username'] == 'admin' && $_POST['password'] == 'admin') {
+     ?>
+     
       <li  class="navli"style="margin-top:30px;" class="dropdown">
         <a  class="dropdown-toggle" data-toggle="dropdown">Oefeningen
         <span class="caret"></span></a>
@@ -50,8 +54,28 @@
           <li class="navli"><a href="biologie.php">Biologie</a></li> 
         </ul>
       </li>
+      
+       <?php
+          }
+      ?>
+      
+      <?php
+        if ($_POST['username'] != 'admin' && $_POST['password'] != 'admin') {
+         ?>
       <li class="navli"style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
+      <?php
+        }
+        ?>
+      
       <li class="navli"style="margin-top:30px;"><a href="contact.php">Contact</a></li> 
+      <?php
+           if ($_POST['username'] == 'admin' && $_POST['password'] == 'admin') {
+      ?>
+      <li class="navli"style="margin-top:30px;"><a href="logout.php">log uit</a></li>
+      <?php
+          }
+      ?>
     </ul>
   </div>
 </nav>
+
