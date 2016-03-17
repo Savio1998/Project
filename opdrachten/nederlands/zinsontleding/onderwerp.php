@@ -31,9 +31,9 @@
 <br>
 <br>
 <div class="row">
-<div class="col-md-4"><center><a href="onderwerp1.php"><img src="project/niveau1.png" alt="" style="width:300px;height:300px;"></a><center></div>
-<div class="col-md-4"><center><a href="onderwerp2.php"><img src="niveau2.png" alt="" style="width:300px;height:300px;"></a><center></div>
-<div class="col-md-4"><center><a href="onderwerp3.php"><img src="niveau3.png" alt="" style="width:300px;height:300px;"></a><center></div>
+<div class="col-md-4"><center><a href="onderwerp1.php"><img src="/afbeeldingen/niveau1.png" alt="" style="width:300px;height:300px;"></a><center></div>
+<div class="col-md-4"><center><a href="onderwerp2.php"><img src="/afbeeldingen/niveau2.png" alt="" style="width:300px;height:300px;"></a><center></div>
+<div class="col-md-4"><center><a href="onderwerp3.php"><img src="/afbeeldingen/niveau3.png" alt="" style="width:300px;height:300px;"></a><center></div>
 </div>
 
         

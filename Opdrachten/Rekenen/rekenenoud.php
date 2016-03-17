@@ -65,8 +65,6 @@
 <?php for($i = 0; $i<10; $i++){
              $s = som(); ?> 
 
-           
-
             <input class="hidden" type="text" name="<?="nummer{$i}"?>" value="<?=$s["nummer"]?>">
             <input class="hidden" type="text" name="<?="cijfer1{$i}"?>" value="<?=$s["cijfer1"]?>">
             <input class="hidden" type="text" name="<?="cijfer2{$i}"?>" value="<?=$s["cijfer2"]?>">

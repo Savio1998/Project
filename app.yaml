@@ -14,7 +14,6 @@ handlers:
 # Serve php scripts.
 - url: /
   script: main.php
-
-- url: /(.+\.php)$
+  
+- url: /(.+\php)$
   script: \1
-
