@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Onderwerp niveau 1</title>
+  <title>Engels</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -11,27 +12,15 @@
   <?php require 'navbar.php'; ?>
  
 </head>
-<body>    
-<?php
-?>
-
-<div class="container">
-<center><h3><b>Niveau 1</b></h3></center>
-<br>
-<br>
-<div class="row">
-<div class="col-md-4"><b>Oefeningen</b></div>
-<div class="col-md-4"></div>
-<div class="col-md-4"><b>Score</b></div>
-</div>
-<br>
-<div class="row">
-<div class="col-md-4"><a href="onderwerp1.1.php">Onderwerp oefening 1</a></div>
-<div class="col-md-4"></div>
-<div class="col-md-4"></div>
-</div>
-</div>        
-        
-         
+<body>
+    <h4><span align: center;>
+ <form action="readquestions.php" method="get" id="questions">
+  <input type="submit" value="Check me" name="Check" />
+		
+</form>
+ <form action="readenglish.php" method="get" id="read">
+  <input type="submit" value="Back" name="Back" />
+		
+</form>
 </body>
 </html>
