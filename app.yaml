@@ -12,9 +12,27 @@ handlers:
   application_readable: true
 
 # Serve php scripts.
-- url: /
-  script: main.php
-
-- url: /(.+\.php)$
-  script: \1
-
+- url: /Hoofdpagina
+  script: /main.php
+  
+- url: /Over_Ons
+  script: /overons.php
+  
+- url: /Opdrachten/Biologie
+  script: /Opdrachten/Biologie/biologie.php
+  
+- url: /Opdrachten/Rekenen
+  script: /Opdrachten/Rekenen/rekenen.php
+  
+- url: /Opdrachten/Nederlands
+  script: /Opdrachten/Nederlands/nederlands.php
+  
+- url: /Opdrachten/Biologie
+  script: /Opdrachten/Biologie/biologie.php
+  
+- url: /Opdrachten/Geschiedenis
+  script: /Opdrachten/Geschiedenis/geschiedenis.php
+  
+- url: /Opdrachten/Engels
+  script: /Opdrachten/Engels/engels.php
+  

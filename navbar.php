@@ -31,27 +31,27 @@
 
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid" style = "height: 120px;">
+  <div class="container-fluid" style = "height: 100px;">
     <div class="navbar-header">
       <a class="navbar-brand"style = "margin-top:-10px;" href="http://php-ooievaar.appspot.com/">
-          <img src="headerimage.png"></img>
+          <img src="/afbeeldingen/headerimage.png"></img>
       </a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="navli" style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/">Home</a></li>
+      <li class="navli" style="margin-top:30px;"><a href="\Hoofdpagina">Home</a></li>
       <li  class="navli"style="margin-top:30px;" class="dropdown">
         <a  class="dropdown-toggle" data-toggle="dropdown">Oefeningen
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li class="navli"><a href="rekenen.php">Rekenen</a></li>
-          <li class="navli"><a href="nederlands.php">Nederlands</a></li>
-          <li class="navli"><a href="engels.php">Engels</a></li>
-          <li class="navli"><a href="geschiedenis.php">Geschiedenis</a></li> 
-          <li class="navli"><a href="biologie.php">Biologie</a></li> 
+          <li class="navli"><a href="/Opdrachten/Rekenen">Rekenen</a></li>
+          <li class="navli"><a href="/Opdrachten/Nederlands">Nederlands</a></li>
+          <li class="navli"><a href="/Opdrachten/Engels">Engels</a></li>
+          <li class="navli"><a href="/Opdrachten/Geschiedenis">Geschiedenis</a></li> 
+          <li class="navli"><a href="/Opdrachten/Biologie">Biologie</a></li> 
         </ul>
       </li>
-      <li class="navli"style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
-      <li class="navli"style="margin-top:30px;"><a href="contact.php">Contact</a></li> 
+      <li class="navli"style="margin-top:30px;" ><a href="\overons.php">Over ons</a></li> 
+      <li class="navli"style="margin-top:30px;"><a href="\contact.php">Contact</a></li> 
     </ul>
   </div>
 </nav>
