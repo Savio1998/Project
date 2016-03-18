@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Onderwerp opdrachten 1</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <?php require 'navbar.php'; ?>
- 
-</head>
-<body>    
-<?php 
+<?php session_start();
+
 
        $vraag = array(
             "Ik fiets naar school.",
@@ -106,6 +93,30 @@
                 $_POST["controle7"],
                 $_POST["controle8"],
                 $_POST["controle9"],
+         );
+            $controle1 = array(
+                $_POST["controle10"],
+                $_POST["controle11"],
+                $_POST["controle12"],
+                $_POST["controle13"],
+                $_POST["controle14"],
+                $_POST["controle15"],
+                $_POST["controle16"],
+                $_POST["controle17"],
+                $_POST["controle18"],
+                $_POST["controle19"],
+         );
+            $controle2 = array(
+                $_POST["controle20"],
+                $_POST["controle21"],
+                $_POST["controle22"],
+                $_POST["controle23"],
+                $_POST["controle24"],
+                $_POST["controle25"],
+                $_POST["controle26"],
+                $_POST["controle27"],
+                $_POST["controle28"],
+                $_POST["controle29"],
          );
             
             $nummer1 = $_POST["nummer"];
@@ -266,10 +277,36 @@
                 }
                 $nummer = 4;
                 $knop = "Opslaan"; 
-            }      
+            }
+            
+            else if($nummer1 == 4){
+                
+                setcookie("opdracht1", $score, time() + 86400, "/");
+                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/opdrachten/nederlands/zinsontleding/onderwerp/niveau1.php">';    
+                exit;   
+                
+            }
+            
+                 
         }
         }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Onderwerp opdrachten 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <?php require '../../../../../navbar.php'; ?>
+ 
+</head>
+<body>
+
 <div class="container"> 
  
  <h3><b>Onderwerp</b></h3> 
@@ -281,12 +318,39 @@
     <div class="col-md-5"></div><div class="col-md-2">Persoonsvorm</div><div class="col-md-2">Onderwerp</div><div class="col-md-3"></div>
 </div>
 <div class="row">
-<form action="onderwerp1.1.php" method="POST">
-     <?php for($i = 0; $i<10; $i++){?> 
-            <div class="col-md-5"><label> <?=$vraag[$i]?> </label></div> <div class="col-md-2"><input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off"></div> <div class="col-md-2"><input type="text" name="<?="vraag1{$i}"?>" value="<?=$eindantwoord1[$i]?>" autocomplete="off"></div> <div class="col-md-3"><?=$eindbericht[$i]?></div><br>
-            <input class="hidden" type="text" name="nummer" value="<?=$nummer?>">
+<form action="opdrachten1.php" method="POST">
+     <?php for($i = 0; $i<10; $i++){
+         if($controle[$i] == $optie5) {
+             $color = 'style="color:red;"';
+             $color1 = 'style="color:red;"';
+         }else if($controle[$i] == $optie4){
+             if($controle1[$i] == ""){
+                 $color = 'style="color:red;"';
+                 $color1 = 'style="color:black;"';
+             }else{
+                 $color = 'style="color:black;"';
+                 $color1 = 'style="color:red;"';
+             }
+             
+         }else{
+            $color = 'style="color:black;"';
+            $color1 = 'style="color:black;"';             
+         }
+
+         ?> 
+            <div class="col-md-5"><label><?=$vraag[$i]?></label></div>
+            <div class="col-md-2"><input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off" <?= $color ?> class="form-control"></div>
+            <div class="col-md-2"><input type="text" name="<?="vraag1{$i}"?>" value="<?=$eindantwoord1[$i]?>" autocomplete="off" <?= $color1 ?> class="form-control"></div>
+            <div class="col-md-3"><?=$eindbericht[$i]?></div>
+            <br><br>
+            
+            
+            <input class="hidden" type="text" name="nummer" value="<?=$nummer?>" >
             <input class="hidden" type="text" name="score" value="<?=$score?>">
             <input class="hidden" type="text" name="<?="controle{$i}"?>" value="<?=$eindbericht[$i]?>">
+            <input class="hidden" type="text" name="<?="controle1{$i}"?>" value="<?=$eindantwoord[$i]?>">
+            <input class="hidden" type="text" name="<?="controle2{$i}"?>" value="<?=$eindantwoord1[$i]?>">
+            
 <?php } ?>
 </div>
         <br><input type="submit" name="button" value="<?=$knop?>">

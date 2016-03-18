@@ -1,4 +1,3 @@
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -38,53 +37,47 @@
       </a>
     </div>
     <ul class="nav navbar-nav">
-<<<<<<< HEAD
-      <li class="navli" style="margin-top:30px;"><a href="\Hoofdpagina">Home</a></li>
-=======
-      <li class="navli" style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/">Home</a></li>
+      <li class="navli" style="margin-top:30px;"><a href="/">Home</a></li>
      <?php
-        if ($_POST['username'] == 'admin' && $_POST['password'] == 'admin') {
+        if ($_SESSION['username'] == 'admin') {
      ?>
      
->>>>>>> 83de94d63f9fa7446877b3f1b997668285d885bb
       <li  class="navli"style="margin-top:30px;" class="dropdown">
         <a  class="dropdown-toggle" data-toggle="dropdown">Oefeningen
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li class="navli"><a href="/Opdrachten/Rekenen">Rekenen</a></li>
-          <li class="navli"><a href="/Opdrachten/Nederlands">Nederlands</a></li>
-          <li class="navli"><a href="/Opdrachten/Engels">Engels</a></li>
-          <li class="navli"><a href="/Opdrachten/Geschiedenis">Geschiedenis</a></li> 
-          <li class="navli"><a href="/Opdrachten/Biologie">Biologie</a></li> 
+          <li class="navli"><a href="/opdrachten/rekenen.php">Rekenen</a></li>
+          <li class="navli"><a href="/opdrachten/nederlands.php">Nederlands</a></li>
+          <li class="navli"><a href="/opdrachten/engels.php">Engels</a></li>
+          <li class="navli"><a href="/opdrachten/geschiedenis.php">Geschiedenis</a></li> 
+          <li class="navli"><a href="/opdrachten/biologie.php">Biologie</a></li>
+          <li class="navli"><a href="/opdrachten/aardrijkskunde.php">Aardrijkskunde</a></li> 
         </ul>
       </li>
-<<<<<<< HEAD
       <li class="navli"style="margin-top:30px;" ><a href="\overons.php">Over ons</a></li> 
       <li class="navli"style="margin-top:30px;"><a href="\contact.php">Contact</a></li> 
-=======
       
        <?php
           }
       ?>
       
       <?php
-        if ($_POST['username'] != 'admin' && $_POST['password'] != 'admin') {
+        if ($_SESSION['username'] != 'admin') {
          ?>
-      <li class="navli"style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
+         <li class="navli"style="margin-top:30px;" ><a href="overons.php">Over ons</a></li> 
       <?php
         }
         ?>
       
-      <li class="navli"style="margin-top:30px;"><a href="contact.php">Contact</a></li> 
       <?php
-           if ($_POST['username'] == 'admin' && $_POST['password'] == 'admin') {
+        if ($_SESSION['username'] == 'admin') {
       ?>
-      <li class="navli"style="margin-top:30px;"><a href="logout.php">log uit</a></li>
+            <li class="navli"><?= $_SESSION['admin']; ?></li>
+            <li class="navli"style="margin-top:30px;"><a href="http://php-ooievaar.appspot.com/logout.php">Log uit</a></li>
       <?php
-          }
+        }
       ?>
->>>>>>> 83de94d63f9fa7446877b3f1b997668285d885bb
-    </ul>
+    </ul>    
   </div>
 </nav>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Onderwerp niveau 1</title>
+  <title>Onderwerp niveau 3</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
 ?>
 
 <div class="container">
-<center><h3><b>Niveau 1</b></h3></center>
+<center><h3><b>Niveau 3</b></h3></center>
 <br>
 <br>
 <div class="row">
@@ -26,9 +26,9 @@
 </div>
 <br>
 <div class="row">
-<div class="col-md-4"><a href="onderwerp1.1.php">Onderwerp oefening 1</a></div>
-<div class="col-md-4"></div>
-<div class="col-md-4"></div>
+<div class="col-md-4"><a href="./niveau3/opdrachten1.php">Onderwerp Oefeningen 1</a></div><br>
+<div class="col-md-4"><a href="./niveau3/opdrachten2.php">Onderwerp Oefeningen 2</a></div><br>
+<div class="col-md-4"><a href="./niveau3/opdrachten3.php">Onderwerp Oefeningen 3</a></div><br>
 </div>
 </div>        
         

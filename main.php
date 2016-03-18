@@ -1,9 +1,19 @@
-<?php
- session_start();
- 
+<?php include('header.php'); ?>
+<?php 
+            if (isset($_POST['login']) && !empty($_POST['username']) 
+               && !empty($_POST['password'])) {
+				
+               if ($_POST['username'] == 'admin' && 
+                  $_POST['password'] == 'admin') {
+                  $_SESSION['valid'] = true;
+                  $_SESSION['username'] = 'admin';
+                  
 
- ?>
-<!DOCTYPE html>
+               }else {
+
+               }
+            }
+?>
 <html>
 <head>  
   <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -61,26 +71,11 @@
       <div class = "container form-signin">
          
          <?php
-            $msg = '';
             
-            if (isset($_POST['login']) && !empty($_POST['username']) 
-               && !empty($_POST['password'])) {
-				
-               if ($_POST['username'] == 'admin' && 
-                  $_POST['password'] == 'admin') {
-                  $_SESSION['valid'] = true;
-                  $_SESSION['username'] = 'admin';
-                  
-                  echo 'Je bent nu ingelogged';
-               }else {
-                  $msg = 'Verkeerd wachtwoord of login naam';
-               }
-            }
          ?>
       </div> <!-- /container -->
       
       <div class = "container" style = "text-align:center;">
-      
          <form class = "form-signin" role = "form" 
             action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
             ?>" method = "post">

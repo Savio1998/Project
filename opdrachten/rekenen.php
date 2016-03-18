@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <?php require 'navbar.php'; ?>
+  <?php include '../navbar.php'; ?>
  
  <!--Leerling kiest uit Sommen (Keren, Delen, Aftrekken, Optellen)
                         Geld
@@ -19,11 +21,11 @@
  
 </head>
 <body>    
-    <a href="sommen.php"><button>Sommen maken</button></a>
-    <a href="geld.php"><button>Rekenen met Geld</button></a>
-    <a href="tijdenafstand.php"><button>Tijden en Afstanden</button></a>
-    <a href="gewicht.php"><button>Gewicht</button></a>
-    <a href="meten.php"><button>Meten</button></a>
-    <a href="breukprocent.php"><button>Breuken en procenten</button></a>
+    <a href="./rekenen/sommen.php"><button>Sommen maken</button></a>
+    <a href="./rekenen/geld.php"><button>Rekenen met Geld</button></a>
+    <a href="./rekenen/tijdenafstand.php"><button>Tijden en Afstanden</button></a>
+    <a href="./rekenen/gewicht.php"><button>Gewicht</button></a>
+    <a href="./rekenen/meten.php"><button>Meten</button></a>
+    <a href="./rekenen/breukprocent.php"><button>Breuken en procenten</button></a>
 </body>
 </html>

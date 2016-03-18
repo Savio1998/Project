@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <?php require 'navbar.php'; ?>
+  <?php require '../../../navbar.php'; ?>
  
 </head>
 <body>    
@@ -31,9 +33,9 @@
 <br>
 <br>
 <div class="row">
-<div class="col-md-4"><center><a href="onderwerp1.php"><img src="/afbeeldingen/niveau1.png" alt="" style="width:300px;height:300px;"></a><center></div>
-<div class="col-md-4"><center><a href="onderwerp2.php"><img src="/afbeeldingen/niveau2.png" alt="" style="width:300px;height:300px;"></a><center></div>
-<div class="col-md-4"><center><a href="onderwerp3.php"><img src="/afbeeldingen/niveau3.png" alt="" style="width:300px;height:300px;"></a><center></div>
+<div class="col-md-4"><center><a href="./onderwerp/niveau1.php"><img src="/afbeeldingen/niveau1.png" alt="" style="width:300px;height:300px;"></a><center></div>
+<div class="col-md-4"><center><a href="./onderwerp/niveau2.php"><img src="/afbeeldingen/niveau2.png" alt="" style="width:300px;height:300px;"></a><center></div>
+<div class="col-md-4"><center><a href="./onderwerp/niveau3.php"><img src="/afbeeldingen/niveau3.png" alt="" style="width:300px;height:300px;"></a><center></div>
 </div>
 
         
