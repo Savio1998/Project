@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <?php require 'navbar.php'; ?>
+  <?php require '../../../../navbar.php'; ?>
  
 </head>
 <body>    
 <?php
+
+
+
 ?>
 
 <div class="container">
@@ -26,9 +31,17 @@
 </div>
 <br>
 <div class="row">
-<div class="col-md-4"><a href="./niveau3/opdrachten1.php">Onderwerp Oefeningen 1</a></div><br>
-<div class="col-md-4"><a href="./niveau3/opdrachten2.php">Onderwerp Oefeningen 2</a></div><br>
-<div class="col-md-4"><a href="./niveau3/opdrachten3.php">Onderwerp Oefeningen 3</a></div><br>
+<div class="col-md-4"><?php if($_COOKIE['opdracht1'] == 0) { ?><a href="./niveau3/opdrachten1.php">Onderwerp Oefeningen 1</a><?php }else{ ?> Onderwerp Oefeningen 1 <?php } ?></div>
+<div class="col-md-4"></div>
+<div class="col-md-4"> <?=isset($_COOKIE["opdracht1"]) ? $_COOKIE['opdracht1'] : 0 ?>/100</div><br>
+
+<div class="col-md-4"><?php if($_COOKIE['opdracht2'] == 0) { ?><a href="./niveau3/opdrachten2.php">Onderwerp Oefeningen 2</a><?php }else{ ?> Onderwerp Oefeningen 2 <?php } ?></div>
+<div class="col-md-4"></div>
+<div class="col-md-4"> <?=isset($_COOKIE["opdracht2"]) ? $_COOKIE['opdracht2'] : 0 ?>/100</div><br>
+
+<div class="col-md-4"><?php if($_COOKIE['opdracht3'] == 0) { ?><a href="./niveau3/opdrachten3.php">Onderwerp Oefeningen 3</a><?php }else{ ?> Onderwerp Oefeningen 3 <?php } ?></div>
+<div class="col-md-4"></div>
+<div class="col-md-4"> <?=isset($_COOKIE["opdracht3"]) ? $_COOKIE['opdracht3'] : 0 ?>/100</div><br>
 </div>
 </div>        
         
