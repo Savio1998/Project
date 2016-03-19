@@ -107,6 +107,18 @@
                 $_POST["controle18"],
                 $_POST["controle19"],
          );
+            $controle2 = array(
+                $_POST["controle20"],
+                $_POST["controle21"],
+                $_POST["controle22"],
+                $_POST["controle23"],
+                $_POST["controle24"],
+                $_POST["controle25"],
+                $_POST["controle26"],
+                $_POST["controle27"],
+                $_POST["controle28"],
+                $_POST["controle29"],
+         );
             
             $nummer1 = $_POST["nummer"];
             $score = $_POST["score"];
@@ -319,7 +331,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Onderwerp opdrachten 2</title>
+  <title>Onderwerp opdrachten 1</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -342,7 +354,7 @@
     <div class="col-md-5"></div><div class="col-md-2">Persoonsvorm</div><div class="col-md-2">Onderwerp</div><div class="col-md-3"></div>
 </div>
 <div class="row">
-<form action="opdrachten2.php" method="POST">
+<form action="opdrachten1.php" method="POST">
      <?php for($i = 0; $i<10; $i++){
          if($controle[$i] == $optie5) {
              $color = 'style="color:red;"';
@@ -373,6 +385,7 @@
             <input class="hidden" type="text" name="score" value="<?=$score?>">
             <input class="hidden" type="text" name="<?="controle{$i}"?>" value="<?=$eindbericht[$i]?>">
             <input class="hidden" type="text" name="<?="controle1{$i}"?>" value="<?=$eindantwoord[$i]?>">
+            <input class="hidden" type="text" name="<?="controle2{$i}"?>" value="<?=$eindantwoord1[$i]?>">
             <input class="hidden" type="text" name="check" value="<?=$checknummer?>">
             
 <?php } ?>

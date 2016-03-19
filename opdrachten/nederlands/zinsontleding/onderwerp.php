@@ -20,14 +20,14 @@
 <div class="container">
 <center><h3><b>Onderwerp</b></h3></center>
 <br>
-<h4><b>Het onderwerp van een tekst is altijd de persoon die een handeling uitvoert. 
+<h4><b>Het onderwerp van een zin is altijd de persoon die een handeling uitvoert. 
                Als ik zeg: "Ik ga lopen" dan is "Ik" het onderwerp. 
                Dit komt omdat "Ik" op dat moment de handeling "gaan" verricht.
                "ga" is in dit geval de persoonsvorm.
                Een eenvoudige manier om achter het onderwerp te komen is door de vraag: "Wie [persoonsvorm]?".
                Hierin moet je zelf de persoonsvorm plaatsen en vervolgens de vraag beantwoorden.
                Het antwoord op die vraag is dan het onderwerp.
-               Bijvoorbeeld bij de zin "Ik ga lopen" kan je de vraag "Wie gaat?".
+               Bijvoorbeeld bij de zin "Ik ga lopen" kan je de vraag "Wie gaat?" stellen.
                In dit geval is het antwoord dus "Ik".
                Hieronder vind je een aantal knoppen die je naar een pagina leiden met wat oefeningen over het onderwerp.</b></h4>
 <br>
