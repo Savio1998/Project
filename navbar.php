@@ -41,8 +41,8 @@
      <?php
         if ($_SESSION['username'] == 'admin') {
      ?>
-     
-      <li  class="navli"style="margin-top:30px;" class="dropdown">
+        <li class="navli"style="margin-top:30px;" ><a href="\opdrachten.php">Opdrachten</a></li> 
+      <!--<li  class="navli"style="margin-top:30px;" class="dropdown">
         <a  class="dropdown-toggle" data-toggle="dropdown">Oefeningen
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -53,7 +53,7 @@
           <li class="navli"><a href="/opdrachten/biologie.php">Biologie</a></li>
           <li class="navli"><a href="/opdrachten/aardrijkskunde.php">Aardrijkskunde</a></li> 
         </ul>
-      </li>
+      </li>-->
       <li class="navli"style="margin-top:30px;" ><a href="\overons.php">Over ons</a></li> 
       <li class="navli"style="margin-top:30px;"><a href="\contact.php">Contact</a></li> 
       
