@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+<?php 
+session_start();
+include('header.php'); ?>
 <?php 
             if (isset($_POST['login']) && !empty($_POST['username']) 
                && !empty($_POST['password'])) {

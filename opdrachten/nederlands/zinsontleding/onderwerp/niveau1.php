@@ -31,17 +31,17 @@
 </div>
 <br>
 <div class="row">
-<div class="col-md-4"><?php if($_COOKIE['opdracht1'] == 0) { ?><a href="./niveau1/opdrachten1.php">Onderwerp Oefeningen 1</a><?php }else{ ?> Onderwerp Oefeningen 1 <?php } ?></div>
+<div class="col-md-4"><?php if($_COOKIE['opdr-nl-zo-ond-n1-opdr1'] == 0) { ?><a href="./niveau1/opdrachten1.php">Onderwerp Oefeningen 1</a><?php }else{ ?> Onderwerp Oefeningen 1 <?php } ?></div>
 <div class="col-md-4"></div>
-<div class="col-md-4"> <?=isset($_COOKIE["opdracht1"]) ? $_COOKIE['opdracht1'] : 0 ?>/100</div><br>
+<div class="col-md-4"> <?=isset($_COOKIE["opdr-nl-zo-ond-n1-opdr1"]) ? $_COOKIE['opdr-nl-zo-ond-n1-opdr1'] : 0 ?>/100</div><br>
 
-<div class="col-md-4"><?php if($_COOKIE['opdracht2'] == 0) { ?><a href="./niveau1/opdrachten2.php">Onderwerp Oefeningen 2</a><?php }else{ ?> Onderwerp Oefeningen 2 <?php } ?></div>
+<div class="col-md-4"><?php if($_COOKIE['opdr-nl-zo-ond-n1-opdr2'] == 0) { ?><a href="./niveau1/opdrachten2.php">Onderwerp Oefeningen 2</a><?php }else{ ?> Onderwerp Oefeningen 2 <?php } ?></div>
 <div class="col-md-4"></div>
-<div class="col-md-4"> <?=isset($_COOKIE["opdracht2"]) ? $_COOKIE['opdracht2'] : 0 ?>/100</div><br>
+<div class="col-md-4"> <?=isset($_COOKIE["opdr-nl-zo-ond-n1-opdr2"]) ? $_COOKIE['opdr-nl-zo-ond-n1-opdr2'] : 0 ?>/100</div><br>
 
-<div class="col-md-4"><?php if($_COOKIE['opdracht3'] == 0) { ?><a href="./niveau1/opdrachten3.php">Onderwerp Oefeningen 3</a><?php }else{ ?> Onderwerp Oefeningen 3 <?php } ?></div>
+<div class="col-md-4"><?php if($_COOKIE['opdr-nl-zo-ond-n1-opdr3'] == 0) { ?><a href="./niveau1/opdrachten3.php">Onderwerp Oefeningen 3</a><?php }else{ ?> Onderwerp Oefeningen 3 <?php } ?></div>
 <div class="col-md-4"></div>
-<div class="col-md-4"> <?=isset($_COOKIE["opdracht3"]) ? $_COOKIE['opdracht3'] : 0 ?>/100</div><br>
+<div class="col-md-4"> <?=isset($_COOKIE["opdr-nl-zo-ond-n1-opdr3"]) ? $_COOKIE['opdr-nl-zo-ond-n1-opdr3'] : 0 ?>/100</div><br>
 </div>
 </div>        
         

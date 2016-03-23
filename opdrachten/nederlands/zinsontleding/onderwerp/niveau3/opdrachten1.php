@@ -305,8 +305,8 @@
             
             else if($nummer1 == 4){
                 
-                setcookie("opdracht1", $score, time() + 86400, "/");
-                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/opdrachten/nederlands/zinsontleding/onderwerp/niveau1.php">';    
+                setcookie("opdr-nl-zo-ond-n3-opdr1", $score, time() + 86400, "/");
+                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/opdrachten/nederlands/zinsontleding/onderwerp/niveau3.php">';    
                 exit;   
                 
             }

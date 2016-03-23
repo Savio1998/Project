@@ -14,6 +14,7 @@
       
       #Table_01{
           margin-top:-20px;
+          margin-left: -18px;
       }
       
   </style>
