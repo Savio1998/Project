@@ -18,12 +18,10 @@
  
   
                     $resultaat = array(
-                    $_POST["0"],
                     $_POST["1"],
                     $_POST["2"],
                     $_POST["3"],
                     $_POST["4"],
-                    $_POST["5"],
                     $_POST["5"],
                     $_POST["6"],
                     $_POST["7"],
@@ -38,7 +36,8 @@
                     $_POST["16"],
                     $_POST["17"],
                     $_POST["18"],
-                    $_POST["19"]
+                    $_POST["19"],
+                    $_POST["20"],
                    
        );   
     
@@ -63,7 +62,7 @@
                     "1",
                     "2",
                     "2",
-                    "2"
+                    "2",
     );
     for ($loopie = 0; $loopie < 20; $loopie++){
     if($resultaat[$loopie] == $antwoord[$loopie]){              
@@ -93,7 +92,8 @@
             }
     
     
-  //  print_r($_POST);
+    echo "<pre>". print_r($resultaat, true) . "</pre>";
+	echo "<pre>". print_r($antwoord, true) . "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -129,7 +129,7 @@
  
 </head>
 <body>
-    
+    <div class = "container">
       <h1>Is het een Cel - Weefsel - Orgaan - Orgaanstelsel of een Organisme</h1>
     <div class = "afbeelding">
         <img src =  "/afbeeldingen/orgaancelweefsel.png" style = "float:left; margin-right:150px;">
@@ -141,12 +141,12 @@
     ?>
     <div class = "dropdowns">
     <?php if ($i < 9) {
-    echo "0",$i+1;
+    echo "&nbsp;	",$i+1;
     } else {
     echo $i+1;
     } ?>
     
-            <select name= "<?=$i?>"id ="<?=$i?>" class="form" id="sel1">
+            <select name= "<?=$i + 1?>"id ="<?=$i + 1?>" class="form" id="sel1">
             <?php if ($tatus[$i] == "incorrect"){  ?>
             
                 <option value="x">???</option>
@@ -175,6 +175,6 @@
      
      
    </form>
-  
+  </div>
 </body>
 </html>
