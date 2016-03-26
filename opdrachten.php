@@ -23,7 +23,7 @@
   </head>
 <body> 
      
-    <table id="Table_01" width="1921" height="981" border="0" cellpadding="0" cellspacing="0">
+    <table id="Table_01" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="6">
 			<img src="afbeeldingen/blackboard1_01.gif" width="1920" height="122" alt=""></td>
