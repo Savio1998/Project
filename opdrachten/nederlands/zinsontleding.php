@@ -12,7 +12,7 @@
     
 </head>
 <body> 
-    <a href="./zinsontleding/onderwerp.php">Onderwerp</a>
+    <a href="./zinsontleding/onderwerp.php">Onderwerp</a><br>
     <a href="./zinsontleding/persoonsvorm.php">Persoonsvorm</a>
         
 </body>
