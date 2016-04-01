@@ -12,7 +12,6 @@
   <link rel="stylesheet" type="text/css" href="level1/text.css">
   <?php require '../../../../navbar.php'; ?>
 	<title>English reading n1</title>
-</head>
  <style>
     div.reading {
     border: 2px solid black;

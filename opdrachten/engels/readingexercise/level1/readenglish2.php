@@ -11,13 +11,22 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <?php require '../../../../navbar.php'; ?>
 	<title>English reading n1</title>
-</head>
- 
+ <style>
+    div.reading {
+    border: 2px solid black;
+    padding: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: justify;
+    background-color: whitesmoke;
+    line-height: 1.5;
+    }
+    </style>
 </head>
 <body>
     <div class="container"> 
-    <div class="row">
-    <h4>
+        <div class="row">
+                <div class="reading"><h4>
 Rikki Mbaza has a very English name but his part of central Africa is suffering from a problem that few in England would have to put up with: a lack of rain so acute that Rikki's livelihood is literally evaporating away.
 
 "I would love to have the English weather here in Chad. Then the lake would not go away."
@@ -40,10 +49,11 @@ The guilty parties, as so often in these cases, blame each other for the problem
 
 None of this gesturing and buck-passing will help Rikki, Achta and their four children in the near future. "I am learning how to fix cars. I don't think cars will be disappearing soon and will certainly last longer than this lake will," muses the glum-looking fisherman. "There won't be any more fishermen in this area in ten years." And with that, he says he has to go and study how to remove and repair brake pads.</span></h4>
 
-</div>
+
  <form action="readquestions.php" method="get" id="questions">
             <input type="submit" value="Next" name="Next" />
-            
+            </div>
+            </div>
             </div>
 		
 </form>

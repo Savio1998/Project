@@ -27,7 +27,7 @@
 <div class="container"> 
     <div class ="reading">
     <div class="row"> 
-		<h1>Your results score</h1>
+		<h1>Your results</h1>
     
 		
         <?php
