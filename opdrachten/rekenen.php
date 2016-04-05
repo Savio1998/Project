@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <?php include '../navbar.php'; ?>
  
- <!--Leerling kiest uit Sommen (Keren, Delen, Aftrekken, Optellen)
+ <!--Leerling kiest uit Sommen (Keren, Delen, Aftrekken, Optellen en Tafels)
                         Geld
                         Tijd/Klokken + Afstanden
                         Gewicht 
@@ -21,7 +21,7 @@
  
 </head>
 <body>    
-    <a href="./rekenen/sommen.php"><button>Sommen maken</button></a>
+    <a href="./rekenen/sommen/sommen.php"><button>Sommen maken</button></a>
     <a href="./rekenen/geld.php"><button>Rekenen met Geld</button></a>
     <a href="./rekenen/tijdenafstand.php"><button>Tijden en Afstanden</button></a>
     <a href="./rekenen/gewicht.php"><button>Gewicht</button></a>
