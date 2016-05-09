@@ -62,7 +62,7 @@
 <<<<<<< HEAD
 			<a href="/opdrachten/topografie.php">
 =======
-			<a href="/opdrachten/aardrijkskunde.php">
+			<a href="/opdrachten/topografie.php">
 >>>>>>> ccfc2fd0bc6d8d4127231810c6c4a3d57d632c5a
 				<img src="afbeeldingen/blackboard1_10.gif" width="683" height="210" border="0" alt=""></a></td>
 		<td rowspan="5">
