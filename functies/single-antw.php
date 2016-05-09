@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-    <?php session_start();
-=======
     <?php
->>>>>>> 53dc1ff42e52e7907973af8bc1315755cd2928f9
     //antwoord pagina voor opdrachten met 1 invoervak
 
     for($e = 0; $e<10; $e++){

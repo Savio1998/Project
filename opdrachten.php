@@ -60,18 +60,10 @@
 				<img src="afbeeldingen/blackboard1_09.gif" width="659" height="210" border="0" alt=""></a></td>
 		<td colspan="2">
 <<<<<<< HEAD
-
-			<a href="/opdrachten/topografie.php">
-
-			<a href="/opdrachten/aardrijkskunde.php">
-
-=======
-<<<<<<< HEAD
 			<a href="/opdrachten/topografie.php">
 =======
 			<a href="/opdrachten/aardrijkskunde.php">
 >>>>>>> ccfc2fd0bc6d8d4127231810c6c4a3d57d632c5a
->>>>>>> 53dc1ff42e52e7907973af8bc1315755cd2928f9
 				<img src="afbeeldingen/blackboard1_10.gif" width="683" height="210" border="0" alt=""></a></td>
 		<td rowspan="5">
 			<img src="afbeeldingen/blackboard1_11.gif" width="223" height="604" alt=""></td>
