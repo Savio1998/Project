@@ -13,6 +13,6 @@
     
 </head>
 <body> 
-    <a href="./biologie/cellen.php">Cel - Weefsel - Orgaan - Orgaanstelsel of een Organisme</a>    
+    <a href="./biologie/dieren.php">dieren</a>    
 </body>
 </html>

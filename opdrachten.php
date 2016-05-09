@@ -23,7 +23,7 @@
   </head>
 <body> 
      
-    <table id="Table_01" width="1921" height="981" border="0" cellpadding="0" cellspacing="0">
+    <table id="Table_01" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="6">
 			<img src="afbeeldingen/blackboard1_01.gif" width="1920" height="122" alt=""></td>
@@ -59,7 +59,11 @@
 			<a href="/opdrachten/engels.php">
 				<img src="afbeeldingen/blackboard1_09.gif" width="659" height="210" border="0" alt=""></a></td>
 		<td colspan="2">
+
+			<a href="/opdrachten/topografie.php">
+
 			<a href="/opdrachten/aardrijkskunde.php">
+
 				<img src="afbeeldingen/blackboard1_10.gif" width="683" height="210" border="0" alt=""></a></td>
 		<td rowspan="5">
 			<img src="afbeeldingen/blackboard1_11.gif" width="223" height="604" alt=""></td>
