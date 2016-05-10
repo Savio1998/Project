@@ -11,7 +11,12 @@
   <?php include '../navbar.php'; ?>
     
 </head>
-<body> 
-    <a href="./nederlands/zinsontleding.php">Zinsontleding</a>    
+<body>    
+    <a href="./nederlands/persoonsvorm.php">Persoonsvorm</a><br>
+    <a href="./nederlands/nwg-wwg.php">Gezegde</a><br>
+    <a href="./nederlands/onderwerp.php">Onderwerp</a><br>
+    <a href="./nederlands/lijdend-voorwerp.php">Lijdend voorwerp</a><br> 
+    <a href="./nederlands/meewerkend-voorwerp.php">Meewerkend voorwerp</a><br> 
+    <a href="./nederlands/bijwoordelijke-bepalingen.php">Bijwoordelijke bepaling</a><br>         
 </body>
 </html>
