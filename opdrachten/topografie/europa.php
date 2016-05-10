@@ -1,6 +1,11 @@
 <?php session_start();
+<<<<<<< HEAD
 // array met daarin alle vragen
 
+=======
+// array met daarin alle vragen   
+ 
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
         $vraag = array(
             "Welke stad ligt er bij 1?",
             "Welke stad ligt er bij 2?",
@@ -16,8 +21,13 @@
         for($e = 0; $e<10; $e++){
         $eindantwoord[$e] = "";
         $eindbericht[$e] = "";
+<<<<<<< HEAD
 
 
+=======
+                
+        
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
         }
         $score = 0;
         $nummer = 0;
@@ -25,10 +35,17 @@
         $knop = "Invullen";
         $optie1 = "Goed gedaan!";
         $optie2 = "Helaas, het is je niet gelukt.";
+<<<<<<< HEAD
 
 
         if($_POST["button"]){
 
+=======
+        
+        
+        if($_POST["button"]){
+            
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
             $resultaat = array(
                     $_POST["vraag0"],
                     $_POST["vraag1"],
@@ -41,7 +58,11 @@
                     $_POST["vraag8"],
                     $_POST["vraag9"]
        );
+<<<<<<< HEAD
 
+=======
+               
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
              $antwoord = array(
             "Parijs",
             "Rome",
@@ -66,6 +87,7 @@
                 $_POST["controle8"],
                 $_POST["controle9"],
          );
+<<<<<<< HEAD
 
             $nummer1 = $_POST["nummer"];
             $score = $_POST["score"];
@@ -75,6 +97,17 @@
             if($nummer1 == 0){
                 if($resultaat[$a] == $antwoord[$a]){
                     $eindantwoord[$a] = $antwoord[$a];
+=======
+            
+            $nummer1 = $_POST["nummer"];
+            $score = $_POST["score"];
+            $checknummer = $_POST["check"];
+        
+        for($a = 0; $a<10; $a++){
+            if($nummer1 == 0){
+                if($resultaat[$a] == $antwoord[$a]){
+                    $eindantwoord[$a] = $antwoord[$a];               
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
                     $eindbericht[$a] = "Goed gedaan!";
                     $score = $score + 10;
                     $checknummer = $checknummer + 1;
@@ -89,9 +122,15 @@
                 }else{
                     $nummer = 1;
                     $knop = "Invullen";
+<<<<<<< HEAD
                 }
             }
 
+=======
+                } 
+            }
+            
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
             else if($nummer1 == 1){
                 if($resultaat[$a] == $antwoord[$a]){
                     $eindantwoord[$a] = $antwoord[$a];
@@ -103,8 +142,13 @@
                     else{
                         $score = $score + 6;
                         $checknummer = $checknummer + 1;
+<<<<<<< HEAD
                     }
                 }
+=======
+                    }                                                                                  
+                }                
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
                 else{
                     $eindantwoord[$a] = "";
                     $eindbericht[$a] = "Helaas, probeer het nog een keer.";
@@ -115,10 +159,17 @@
                 }else{
                     $nummer = 2;
                     $knop = "Invullen";
+<<<<<<< HEAD
                 }
 
             }
 
+=======
+                } 
+                 
+            }
+            
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
             else if($nummer1 == 2){
                 if($resultaat[$a] == $antwoord[$a]){
                     $eindantwoord[$a] = $antwoord[$a];
@@ -130,8 +181,13 @@
                     else{
                         $score = $score + 2;
                         $checknummer = $checknummer + 1;
+<<<<<<< HEAD
                     }
                 }
+=======
+                    }                  
+                }                
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
                 else{
                     $eindantwoord[$a] = "";
                     $eindbericht[$a] = "Helaas, het is je niet gelukt.";
@@ -142,14 +198,22 @@
                 }else{
                     $nummer = 3;
                     $knop = "Check antwoorden";
+<<<<<<< HEAD
                 }
 
             }
 
+=======
+                } 
+ 
+            }
+            
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
             else if($nummer1 == 3){
                 if($resultaat[$a] == $antwoord[$a]){
                     $eindantwoord[$a] = $antwoord[$a];
                     $eindbericht[$a] = "Goed gedaan!";
+<<<<<<< HEAD
                 }
                 else{
                     $eindantwoord[$a] = $antwoord[$a];
@@ -172,6 +236,30 @@
         }
 ?>
 
+=======
+                }                     
+                else{
+                    $eindantwoord[$a] = $antwoord[$a];                    
+                    $eindbericht[$a] = "Helaas, het is je niet gelukt.";
+                }
+                $nummer = 4;
+                $knop = "Opslaan"; 
+            }
+            
+            else if($nummer1 == 4){
+                
+                setcookie("opdr-tp-eu", $score, time() + 86400, "/");
+                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/opdrachten/topografie.php">';    
+                exit;   
+                
+            }
+            
+                 
+        }
+        }
+?>
+     
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
 <!DOCTYPE html>
 <html>
 <head>
@@ -214,27 +302,50 @@ body {
 <form action="europa.php" method="POST">
        <?php for($i = 0; $i<10; $i++){
          if($controle[$i] == $optie2) {
+<<<<<<< HEAD
              $color = 'style="color:red;"';
          }else{
             $color = 'style="color:black;"';
          }
          ?>
+=======
+             $color = 'style="color:red;"';             
+         }else{
+            $color = 'style="color:black;"';                         
+         }
+
+         ?> 
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
             <div class="col-md-5"><label><?=$vraag[$i]?></label></div>
             <div class="col-md-3"><input type="text" name="<?="vraag{$i}"?>" value="<?=$eindantwoord[$i]?>" autocomplete="off" <?= $color ?> class="form-control"></div>
             <div class="col-md-4"><?=$eindbericht[$i]?></div>
             <br><br>
+<<<<<<< HEAD
 
 
+=======
+            
+            
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
             <input class="hidden" type="text" name="nummer" value="<?=$nummer?>" >
             <input class="hidden" type="text" name="score" value="<?=$score?>">
             <input class="hidden" type="text" name="<?="controle{$i}"?>" value="<?=$eindbericht[$i]?>">
             <input class="hidden" type="text" name="check" value="<?=$checknummer?>">
+<<<<<<< HEAD
 
 <?php } ?>
 </div>
         <br><input type="submit" name="button" value="<?=$knop?>">
         </form>
 
+=======
+            
+<?php } ?>
+</div>
+        <br><input type="submit" name="button" value="<?=$knop?>">
+        </form> 
+        
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
       </div>
     </div>
   </div>

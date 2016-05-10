@@ -60,6 +60,10 @@
 				<img src="afbeeldingen/blackboard1_09.gif" width="659" height="210" border="0" alt=""></a></td>
 		<td colspan="2">
 			<a href="/opdrachten/topografie.php">
+<<<<<<< HEAD
+=======
+			<a href="/opdrachten/topografie.php">
+>>>>>>> 38445f5a839f67d0e2e8650a08ddbec368f80231
 				<img src="afbeeldingen/blackboard1_10.gif" width="683" height="210" border="0" alt=""></a></td>
 		<td rowspan="5">
 			<img src="afbeeldingen/blackboard1_11.gif" width="223" height="604" alt=""></td>

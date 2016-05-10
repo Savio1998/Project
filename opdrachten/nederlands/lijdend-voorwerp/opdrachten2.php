@@ -1,17 +1,17 @@
 <?php session_start();
-      
 
- $vraag = array(
-            "Welke continent ligt er bij 1?",
-            "Welke continent ligt er bij 2?",
-            "Welke continent ligt er bij 3?",  
-            "Welke continent ligt er bij 4?",
-            "Welke continent ligt er bij 5?",
-            "Welke continent ligt er bij 6?",
-            "Welke continent ligt er bij 7?",
-            "Welke zee  ligt er bij 8?",
-            "Welke oceaan ligt er bij 9?",
-            "Welke oceaan ligt er bij 10?"
+
+       $vraag = array(
+            "Ik fiets naar school.",
+            "Ik vier mijn verjaardag.",
+            "Jij eet bij je grootouders.",
+            "Ik ga met de bus naar school.",
+            "Mijn moeder kookt vanavond.",
+            "Morgen hebben wij geen school.",
+            "Ik geef mijn neefje een cadeau.",
+            "Mijn grootouders hebben een kunstgebit.",
+            "Het jongetje gaf een kusje aan zijn moeder.",
+            "Mijn vader gaf een bosje bloemen aan mijn moeder."            
         );
         for($e = 0; $e<10; $e++){
         $eindantwoord[$e] = "";
@@ -43,16 +43,16 @@
        );
                
              $antwoord = array(
-            "Azië",
-            "Australie",
-            "Afrika",
-            "Europa",
-            "Noord Amerika",
-            "Zuid Amerika",
-            "Antartica",
-            "Middellanse zee",
-            "Pacific oceaan",
-            "Grote oceaan"
+                    "fiets",
+                    "vier",
+                    "eet",
+                    "ga",
+                    "kookt",
+                    "hebben",
+                    "geef",
+                    "hebben",
+                    "gaf",
+                    "gaf"
         );
             $controle = array(
                 $_POST["controle0"],
@@ -161,8 +161,8 @@
             
             else if($nummer1 == 4){
                 
-                setcookie("opdr-tp-wd", $score, time() + 86400, "/");
-                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/opdrachten/topografie.php">';    
+                setcookie("opdr-nl-pers-opdr2", $score, time() + 86400, "/");
+                echo '<META HTTP-EQUIV="Refresh" Content="0; URL=/opdrachten/nederlands/persoonsvorm.php">';    
                 exit;   
                 
             }
@@ -171,48 +171,34 @@
         }
         }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nederland resultaat</title>
+  <title>Persoonsvorm opdrachten 2</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <?php require 'navbar.php'; ?>
-  <style type="text/css">
-body {
-    margin: 0;
-}
-#left {
-    float:left;
-    width: 50%;
-    display: inline-block;
-}
-#right {
-    float:left;
-    width: 50%;
-    display: inline-block;
-}
-</style>
+  <?php require '../../../navbar.php'; ?>
+ 
 </head>
 <body>
+
 <div class="container"> 
-<h3><b>Wereld</b></h3><br>
-<div id="left">
-<h3><b>Beantwoord de volgende topografische vragen</b></h3><br>
-<img src="/afbeeldingen/wereld.jpg" height="500" width="500">
+ 
+ <h3><b>Persoonsvorm</b></h3> 
+ <div class="row">
+    <div class="col-md-5"><h4><b>Geef de persoonsvorm.</b></h4></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-3"><b>Score:</b> <?=$score?>/100</div>
+</div><br>
+
+<div class="row">
+    <div class="col-md-5"></div><div class="col-md-3">Persoonsvorm</div><div class="col-md-4"></div>
 </div>
-
-<div id="right">
-
-<h3><b>score = <?=$score?>/100</b></h3></br></br>
-
-<div class ="row">
-
-<form action="wereld.php" method="POST">
+<div class="row">
+<form action="opdrachten2.php" method="POST">
      <?php for($i = 0; $i<10; $i++){
          if($controle[$i] == $optie2) {
              $color = 'style="color:red;"';             
@@ -235,9 +221,7 @@ body {
 <?php } ?>
 </div>
         <br><input type="submit" name="button" value="<?=$knop?>">
-        </form> 
-    </div> 
-   </div>
-  </div>    
+    </form>   
+    </div>   
 </body>
 </html>
