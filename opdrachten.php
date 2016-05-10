@@ -9,20 +9,20 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <?php include 'navbar.php'; ?>
-  
+
   <style>
-      
+
       #Table_01{
           margin-top:-20px;
           margin-left: -18px;
       }
-      
+
   </style>
-  
-  
+
+
   </head>
-<body> 
-     
+<body>
+
     <table id="Table_01" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="6">
@@ -59,11 +59,7 @@
 			<a href="/opdrachten/engels.php">
 				<img src="afbeeldingen/blackboard1_09.gif" width="659" height="210" border="0" alt=""></a></td>
 		<td colspan="2">
-<<<<<<< HEAD
 			<a href="/opdrachten/topografie.php">
-=======
-			<a href="/opdrachten/aardrijkskunde.php">
->>>>>>> ccfc2fd0bc6d8d4127231810c6c4a3d57d632c5a
 				<img src="afbeeldingen/blackboard1_10.gif" width="683" height="210" border="0" alt=""></a></td>
 		<td rowspan="5">
 			<img src="afbeeldingen/blackboard1_11.gif" width="223" height="604" alt=""></td>
@@ -116,6 +112,6 @@
 		<td></td>
 	</tr>
 </table>
-    
+
 </body>
 </html>

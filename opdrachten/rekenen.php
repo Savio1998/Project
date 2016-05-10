@@ -11,21 +11,21 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <?php include '../navbar.php'; ?>
- 
+
  <!--Leerling kiest uit Sommen (Keren, Delen, Aftrekken, Optellen en Tafels)
                         Geld
                         Tijd/Klokken + Afstanden
-                        Gewicht 
+                        Gewicht
                         Meten 
                         Breuken + Procenten-->
- 
+
 </head>
-<body>    
+<body>
     <a href="./rekenen/sommen/sommen.php"><button>Sommen maken</button></a>
-    <a href="./rekenen/geld.php"><button>Rekenen met Geld</button></a>
+    <!-- <a href="./rekenen/geld.php"><button>Rekenen met Geld</button></a>
     <a href="./rekenen/tijdenafstand.php"><button>Tijden en Afstanden</button></a>
     <a href="./rekenen/gewicht.php"><button>Gewicht</button></a>
     <a href="./rekenen/meten.php"><button>Meten</button></a>
-    <a href="./rekenen/breukprocent.php"><button>Breuken en procenten</button></a>
+    <a href="./rekenen/breukprocent.php"><button>Breuken en procenten</button></a> -->
 </body>
 </html>
