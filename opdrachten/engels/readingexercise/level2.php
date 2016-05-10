@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reading Exercises level 1</title>
+  <title>Reading Exercises level 2</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
  
 </head>
 <style>
- .opdracht{
+.opdracht{
  padding-left: 30px;    
  }
  
@@ -38,9 +38,8 @@
 }
 </style>
 <body>    
-<div class="opdracht">  
-         <a href="/opdrachten/engels/readingexercise/level1/readenglish1.php">Reading Assignment 1</a>
-</div>
-         
+        <div class="opdracht"> 
+         <a href="/opdrachten/engels/readingexercise/level2/readenglish1.php">Reading Assignment 1</a>
+         </div>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.nederland{
+    
+    float:left;
+    display: inline-block;
+    
+}
+
+.europa{
+    float:center;
+    display: inline-block;
+}
+.azië{
+    float:right;
+    display: inline-block;
+}

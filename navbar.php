@@ -52,7 +52,7 @@
           <li class="navli"><a href="/opdrachten/engels.php">Engels</a></li>
           <li class="navli"><a href="/opdrachten/geschiedenis.php">Geschiedenis</a></li> 
           <li class="navli"><a href="/opdrachten/biologie.php">Biologie</a></li>
-          <li class="navli"><a href="/opdrachten/aardrijkskunde.php">Aardrijkskunde</a></li> 
+          <li class="navli"><a href="/opdrachten/topografie.php">topografie</a></li> 
         </ul>
       </li>-->
       <li class="navli"style="margin-top:30px;" ><a href="\overons.php">Over ons</a></li> 

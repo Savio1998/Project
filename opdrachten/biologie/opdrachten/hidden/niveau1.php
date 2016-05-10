@@ -31,17 +31,17 @@
 </div>
 <br>
 <div class="row">
-<div class="col-md-4"><?php if($_COOKIE['opdr-bio-cel-n1-opdr1'] == 0) { ?><a href="./niveau1/opdrachten1.php">Cellen Oefeningen 1</a><?php }else{ ?> Cellen Oefeningen 1 <?php } ?></div>
+<div class="col-md-4"><?php if($_COOKIE['opdr-bio-dier-herken-n1-opdr1'] == 0) { ?><a href="./niveau1/opdrachten1.php">dieren herkennen 1</a><?php }else{ ?> dieren herkennen 1 <?php } ?></div>
 <div class="col-md-4"></div>
-<div class="col-md-4"> <?=isset($_COOKIE["opdr-bio-cel-n1-opdr1"]) ? $_COOKIE['opdr-nl-zo-ond-n1-opdr1'] : 0 ?>/100</div><br>
+<div class="col-md-4"> <?=isset($_COOKIE["opdr-bio-dier-herken-n1-opdr1"]) ? $_COOKIE['opdr-bio-dier-herken-n1-opdr1'] : 0 ?>/100</div><br>
 
-<div class="col-md-4"><?php if($_COOKIE['opdr-bio-cel-n1-opdr2'] == 0) { ?><a href="./niveau1/opdrachten2.php">Cellen Oefeningen 2</a><?php }else{ ?> Cellen Oefeningen 2 <?php } ?></div>
+<div class="col-md-4"><?php if($_COOKIE['opdr-bio-dier-herken-n1-opdr2'] == 0) { ?><a href="./niveau1/opdrachten2.php">dieren herkennen 2</a><?php }else{ ?> dieren herkennen 2 <?php } ?></div>
 <div class="col-md-4"></div>
-<div class="col-md-4"> <?=isset($_COOKIE["opdr-bio-cel-n1-opdr2"]) ? $_COOKIE['opdr-nl-zo-ond-n1-opdr2'] : 0 ?>/100</div><br>
+<div class="col-md-4"> <?=isset($_COOKIE["opdr-bio-dier-herken-n1-opdr2"]) ? $_COOKIE['opdr-bio-dier-herken-n1-opdr2'] : 0 ?>/100</div><br>
 
-<div class="col-md-4"><?php if($_COOKIE['opdr-bio-cel-n1-opdr3'] == 0) { ?><a href="./niveau1/opdrachten3.php">Cellen Oefeningen 3</a><?php }else{ ?> Cellen Oefeningen 3 <?php } ?></div>
+<div class="col-md-4"><?php if($_COOKIE['opdr-bio-dier-herken-n1-opdr3'] == 0) { ?><a href="./niveau1/opdrachten3.php">dieren herkennen 3</a><?php }else{ ?> dieren herkennen 3 <?php } ?></div>
 <div class="col-md-4"></div>
-<div class="col-md-4"> <?=isset($_COOKIE["opdr-bio-cel-n1-opdr3"]) ? $_COOKIE['opdr-nl-zo-ond-n1-opdr3'] : 0 ?>/100</div><br>
+<div class="col-md-4"> <?=isset($_COOKIE["opdr-bio-dier-herken-n1-opdr3"]) ? $_COOKIE['opdr-bio-dier-herken-n1-opdr3'] : 0 ?>/100</div><br>
 </div>
 </div>        
         
